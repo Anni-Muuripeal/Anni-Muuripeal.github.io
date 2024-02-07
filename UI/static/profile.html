@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Vina+Sans&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="#">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <span class="heading1"> Welcome to your statistics!</span> <br>
+    </div>
+    <div class="user-info">
+        <div class="user-info-item">
+            <div class="user-info-item">
+                <span class="label"> </span>
+                <span class="value" id="username"></span>
+              </div>
+        </div>
+        <div class="user-info-item">
+            <span class="label">User ID: </span>
+          <span class="value" id="userId"></span>
+        </div>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <div class="data">You have completed:</div>
+          <span class="value" id="exercise"></span>
+          <span class="value">exercises</span><br>
+          <span class="value" id="project"></span>
+          <span class="value">projects</span><br> 
+          <span class="graphic2" id="treemapGraph">Open graph</span> 
+        </div>
+        <div class="box">
+          <span class="data">Total XP:</span><br> 
+          <span class="value" id="totalXP"></span> <br> 
+          <span class="graphic" id="XPgraph">Open graph</span>
+        </div>
+        <div class="box">
+          <span class="data">Audits done:</span><br> 
+          <span class="value" id="totalAudits"></span><br> 
+          <span class="graphic" id="auditGraph">Open graph</span>
+        </div>
+      </div>
+      <div id="graph"></div>
+    </div>
+    <p id="errorMessage" class="error-message"></p>
+    <div class="logout-section">
+      <button class="button" id="logoutButton">Log out</button>
+    </div>
+  </div>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script type="module" src="../xp-progress.js"></script>
+  <script type="module" src="../audits.js"></script>
+  <script type="module" src="../objects.js"></script>
+  <script type="module" src="../treemap.js"></script>
+  <script type="module" src="../userAuth.js"></script>
+</body>
+</html>

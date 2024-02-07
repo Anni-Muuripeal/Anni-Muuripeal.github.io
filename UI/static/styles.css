@@ -1,0 +1,191 @@
+body {
+  padding: 0;
+  background-color: #331f29;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .heading1 {
+    padding-top: 20px;
+    text-align: center;
+    width: 100%; 
+    margin: 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+  }
+  
+.error-message {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.input input[type="text"],
+.input input[type="password"] {
+  width: 100%;
+  margin-left: 0%;
+  padding: 5px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  
+}
+.button {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #331f30;
+  border: 1px solid #ffcadc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 25%;
+  
+  
+}
+.button:hover {
+  background-color: #331f30;
+  color: #ffcadc;
+}
+main {
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .user-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px; 
+    padding: 40px 0;
+  }
+  
+  .user-info-item {
+    display: flex;
+    align-items: center;
+    margin-top: 30 px;
+    margin-bottom: 30 px;
+  }
+  
+  
+  .boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
+  }
+
+.box {
+    flex: 1;
+   
+  display: inline-block;
+  width: 30%;
+  border: 1px solid #ffcadc;
+  background-color: #5c3b57;
+    text-align: center;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.label, .data, .graphic, .graphic2 {
+    display: block; 
+    margin: 5px 0; 
+    
+  }
+
+.graphic, .graphic2 {
+    cursor: pointer;
+    color: #ff009d; 
+  }
+  
+.graphic:hover,
+.graphic2:hover {
+  color: #ffcadc;
+}
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+}
+.bar {
+  fill: #ffcadc;
+}
+.xpLabel {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  fill: #ffcadc;
+  text-anchor: middle;
+}
+.y-axis-label {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  fill: white;
+}
+.x-axis,
+.y-axis {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tspan {
+    font-family: Arial, Helvetica, sans-serif;
+  fill: white;
+}
+
+.logout-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logout-section .button {
+  width: auto; 
+ 
+  padding: 10px 200px; 
+  margin: 0; 
+}
+
+
+#graph {
+    padding: 40px;
+}
+
+.tspan {
+  fill: #ffc8c8; /* Text color inside treemap */
+  font-size: 12px; /* Adjust based on your design */
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif
+}
+
+rect {
+  cursor: pointer; 
+  stroke-width: 1px;
+  fill: #914e77;
+  stroke: rgb(255, 207, 207);
+}
